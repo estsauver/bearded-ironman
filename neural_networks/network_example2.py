@@ -64,6 +64,6 @@ for i in range(20):
     ion()   # interactive graphics on
     draw()  # update the plot
 
-ioff()
-show()
+    ioff()
+    show()
 
