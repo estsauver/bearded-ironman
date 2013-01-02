@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31919739-bb45-415d-b056-f6e840c7f436" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/learning_agent.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/notifier.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/optimization_example.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_networks/network_example2.py" afterPath="$PROJECT_DIR$/neural_networks/network_example2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_networks/neural_networks.iml" afterPath="$PROJECT_DIR$/neural_networks/neural_networks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/senior_project.iml" afterPath="$PROJECT_DIR$/senior_project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="senior_project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357020399463" ignored="false" />
+    <file path="/Dummy.txt" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357070679270" ignored="false" />
     <file path="/dataset.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356739802187" ignored="false" />
     <file path="/Python Console" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356995940779" ignored="false" />
     <file path="/network.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356853799976" ignored="false" />
@@ -28,7 +21,6 @@
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/experiments/experiment.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/environments/mazes/maze.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/agents/learning.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
-    <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/utilities.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/learners/valuebased/interface.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187796" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +101,7 @@
       <file leaf-file-name="learning_agent.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="827" selection-end="827" vertical-scroll-proportion="0.6320225">
+            <state line="32" column="13" selection-start="947" selection-end="947" vertical-scroll-proportion="0.31842577">
               <folding>
                 <element signature="e#26#45#0" expanded="true" />
               </folding>
@@ -120,20 +112,15 @@
       <file leaf-file-name="optimization_example.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_networks/optimization_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="-37.5">
-              <folding>
-                <element signature="e#25#48#0" expanded="true" />
-              </folding>
+            <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="network_documentation.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
               <folding />
             </state>
@@ -229,30 +216,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="senior_project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Enthought &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -281,6 +250,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -298,11 +277,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -428,6 +407,14 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -441,27 +428,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -490,6 +456,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -586,7 +565,11 @@
       <created>1356987944075</created>
       <updated>1356987944076</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Another example&#10;&#10;">
+      <created>1357020441311</created>
+      <updated>1357020441312</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -611,7 +594,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1346" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -624,7 +607,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -635,6 +617,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -705,6 +688,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#26#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/optimization_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/notifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="67" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/network_example1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="12" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
@@ -740,10 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/optimization_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="-37.5">
-          <folding>
-            <element signature="e#25#48#0" expanded="true" />
-          </folding>
+        <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,11 +766,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+      <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="24" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/network_example2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="16" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -771,23 +794,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="24" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_example2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="827" selection-end="827" vertical-scroll-proportion="0.6320225">
+        <state line="32" column="13" selection-start="947" selection-end="947" vertical-scroll-proportion="0.31842577">
           <folding>
             <element signature="e#26#45#0" expanded="true" />
           </folding>
