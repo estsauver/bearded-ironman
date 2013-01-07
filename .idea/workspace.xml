@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31919739-bb45-415d-b056-f6e840c7f436" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/arduino.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/dataProcessing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/sensorCalibration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="senior_project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357070679270" ignored="false" />
+    <file path="/Dummy.txt" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357549831865" ignored="false" />
     <file path="/dataset.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356739802187" ignored="false" />
-    <file path="/Python Console" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356995940779" ignored="false" />
+    <file path="/Python Console" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357517363875" ignored="false" />
     <file path="/network.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356853799976" ignored="false" />
     <file path="$USER_HOME$/Library/Preferences/IntelliJIdea12/options/runner.layout.xml" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356826360002" ignored="false" />
     <file path="/start_script.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1356997134906" ignored="false" />
@@ -22,6 +27,11 @@
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/environments/mazes/maze.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/agents/learning.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187436" ignored="false" />
     <file path="/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/PyBrain-0.3.1-py2.7.egg/pybrain/rl/learners/valuebased/interface.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357007187796" ignored="false" />
+    <file path="/dataProcessing.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357518854910" ignored="false" />
+    <file path="/a.dummy" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357117419334" ignored="false" />
+    <file path="/__init__.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357451801298" ignored="false" />
+    <file path="/arduino.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357519890626" ignored="false" />
+    <file path="/sensorCalibration.py" changelist="31919739-bb45-415d-b056-f6e840c7f436" time="1357549009554" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +46,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -71,6 +80,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -80,15 +90,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="network_example1.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neural_networks/network_example1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="14" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="network_example2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_networks/network_example2.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learning_agent.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="learning_agent.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="947" selection-end="947" vertical-scroll-proportion="0.31842577">
+            <state line="14" column="12" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#26#45#0" expanded="true" />
               </folding>
@@ -109,10 +110,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="optimization_example.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neural_networks/optimization_example.py">
+      <file leaf-file-name="dataProcessing.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/neural_networks/dataProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+            <state line="4" column="62" selection-start="198" selection-end="198" vertical-scroll-proportion="0.16806723">
+              <folding>
+                <element signature="e#25#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sensorCalibration.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neural_networks/sensorCalibration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="71" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arduino.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neural_networks/arduino.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="26" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#183#193#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neural_networks/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,6 +154,24 @@
         <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/pyfirmata/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pyfirmata.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/pyfirmata/pyfirmata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="464" column="0" selection-start="17213" selection-end="17213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,6 +215,10 @@
         <option value="$PROJECT_DIR$/neural_networks/optimization_example.py" />
         <option value="$PROJECT_DIR$/neural_networks/notifier.py" />
         <option value="$PROJECT_DIR$/neural_networks/learning_agent.py" />
+        <option value="$PROJECT_DIR$/neural_networks/__init__.py" />
+        <option value="$PROJECT_DIR$/neural_networks/arduino.py" />
+        <option value="$PROJECT_DIR$/neural_networks/sensorCalibration.py" />
+        <option value="$PROJECT_DIR$/neural_networks/dataProcessing.py" />
       </list>
     </option>
   </component>
@@ -216,6 +270,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,7 +315,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,26 +347,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.learning_agent">
-    <configuration default="false" name="network_example1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neural_networks" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="neural_networks" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/network_example1.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.arduino">
     <configuration default="false" name="network_example2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,23 +360,6 @@
       <module name="neural_networks" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/network_example2.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="optimization_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neural_networks" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="neural_networks" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/optimization_example.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -378,6 +396,44 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/learning_agent.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dataProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neural_networks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="neural_networks" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/dataProcessing.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="arduino" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neural_networks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="neural_networks" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_networks/arduino.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonCover" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonCover" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -526,19 +582,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.network_example1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.network_example2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.optimization_example" />
-      <item index="3" class="java.lang.String" itemvalue="Python.notifier" />
-      <item index="4" class="java.lang.String" itemvalue="Python.learning_agent" />
+      <item index="0" class="java.lang.String" itemvalue="Python.network_example2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.notifier" />
+      <item index="2" class="java.lang.String" itemvalue="Python.learning_agent" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dataProcessing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.arduino" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.learning_agent" />
-        <item index="1" class="java.lang.String" itemvalue="Python.network_example2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.notifier" />
-        <item index="3" class="java.lang.String" itemvalue="Python.network_example1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.optimization_example" />
+        <item index="0" class="java.lang.String" itemvalue="Python.arduino" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dataProcessing" />
+        <item index="2" class="java.lang.String" itemvalue="Python.learning_agent" />
+        <item index="3" class="java.lang.String" itemvalue="Python.network_example2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.notifier" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -569,10 +625,14 @@
       <created>1357020441311</created>
       <updated>1357020441312</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Learning network example added&#10;">
+      <created>1357093570980</created>
+      <updated>1357093570980</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -594,11 +654,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1346" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.4969231" order="3" side_tool="false" content_ui="tabs" />
@@ -607,17 +668,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67161715" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.96582466" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.96582466" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -660,7 +720,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another example&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data persistence and board connection is done&#10;&#10;Data persistence, connection to the board, and use of sensor &#10;calibration is done. __init__.py is still not really the initializing file but has been added to the module.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -677,6 +737,10 @@
     <MESSAGE value="Add example network in structure&#10;" />
     <MESSAGE value="Add another network example and documentation" />
     <MESSAGE value="Another example&#10;&#10;" />
+    <MESSAGE value="Learning network example added&#10;" />
+    <MESSAGE value="Finished database persistence level&#10;" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="Data persistence and board connection is done&#10;&#10;Data persistence, connection to the board, and use of sensor &#10;calibration is done. __init__.py is still not really the initializing file but has been added to the module.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -688,57 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#26#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/optimization_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/notifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="67" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_example2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2529" selection-end="2529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="27" selection-start="259" selection-end="259" vertical-scroll-proportion="0.23275863">
@@ -765,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="24" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.5" />
@@ -794,11 +797,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/SQLAlchemy-0.8.0b2-py2.7-macosx-10.5-x86_64.egg/sqlalchemy/engine/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="319" column="0" selection-start="10864" selection-end="10864" vertical-scroll-proportion="0.33240223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/network_documentation.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/pyfirmata/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/pyfirmata/pyfirmata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="464" column="0" selection-start="17213" selection-end="17213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/learning_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="947" selection-end="947" vertical-scroll-proportion="0.31842577">
+        <state line="14" column="12" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#26#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/arduino.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#183#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/sensorCalibration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="71" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/dataProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="62" selection-start="198" selection-end="198" vertical-scroll-proportion="0.16806723">
+          <folding>
+            <element signature="e#25#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
