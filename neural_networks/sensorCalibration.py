@@ -10,7 +10,7 @@ def temperature(pins):
         return (False, -1)
     value = pins[0] * 100
     error = 2
-    return value, error
+    return (value, error)
 
 
 def pH(pins):
@@ -22,4 +22,4 @@ def pH(pins):
         return (False, -1)
     value = (pins[0] - pins[1]) * 1000
     error = 3
-    return value, error
+    return (value, error)

@@ -2,6 +2,7 @@ __author__ = 'estsauver'
 import datetime
 from twilio.rest import TwilioRestClient
 
+#My twilio account credentials. Please don't steal them. Kim.
 account = "AC8c55c6e9f0c1dd3532c3302b36ff5179"
 token = "c8908533bb3ed7698cfac71832747657"
 client = TwilioRestClient(account, token)
@@ -10,11 +11,18 @@ class ErrorHandler(object):
     def __init__(self, experiment):
         self.badData = self.BadData()
         self.experiment = experiment
+        #Sets maximum time between alerts so we're not constantly getting phone calls. This is right now 30 mins.
+        self.alertInterval = 60 * 30
+        self.alertHistory = []
 
-
+    #Actual sends the text message out.
     def alert(self, bodyText="There's a problem with the reactor"):
-        message = client.sms.messages.create(to="+18572378675", body=bodyText, from_="+17694473275")
-        print message
+        #If loop makes sure we haven't sent one recently.
+        if (self.alertHistory[-1][2] - datetime.datetime.now()) > datetime.timedelta(seconds=self.alertInterval):
+            message = client.sms.messages.create(to="+18572378675", body=bodyText, from_="+17694473275")
+            self.alertHistory.append((message, datetime.datetime.now()))
+            print message
+
 
     def newError(self, type, time, values):
         self.badData.flush()
@@ -38,6 +46,7 @@ class ErrorHandler(object):
             #The amount of time that we remember bad data for
             self.badDataMemory = 1000
 
+        #get rid of old bad data. Called when we get new bad data!
         def flush(self):
             while (datetime.datetime.now() - self.data[0][1]) > datetime.timedelta(seconds=self.badDataMemory):
                 self.data.pop()
