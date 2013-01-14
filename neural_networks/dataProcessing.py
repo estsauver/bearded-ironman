@@ -15,6 +15,20 @@ _Base = declarative_base()
 Session = sessionmaker(bind=_engine)
 
 
+class Experiment(_Base):
+    __tablename__ = "experiments"
+
+    id = Column(Integer, primary_key=True)
+    startTime = Column(DateTime)
+
+
+    def __init__(self):
+        self.startTime = datetime.now()
+
+    def __repr__(self):
+        return "<Experiment('%s')>" % self.id
+
+
 class Datapoint(_Base):
     __tablename__ = "datapoints"
 
@@ -22,7 +36,7 @@ class Datapoint(_Base):
 
     time_recorded = Column(DateTime)
     experiment_id = Column(Integer, ForeignKey('experiments.id'))
-    experiment = relationship("Experiment", backref=backref("datapoints", order_by=time))
+    experiment = relationship(Experiment, backref=backref("datapoints", order_by=time_recorded))
 
     def __init__(self, experiment):
         self.time_recorded = datetime.now()
@@ -40,9 +54,9 @@ class Datavalue(_Base):
     value = Column(Float)
     error = Column(Float)
     dataType = Column(String)
-
+    time = Column(DateTime)
     datapoint_id = Column(Integer, ForeignKey('datapoints.id'))
-    datapoint = relationship("datapoint", backref=backref("datavalues", order_by=id))
+    datapoint = relationship(Datapoint, backref=backref("datavalues", order_by=id))
 
     def __init__(self, value, error, datatype, datapoint):
         self.value = value
@@ -50,24 +64,11 @@ class Datavalue(_Base):
         self.datatype = datatype
         self.datapoint_id = datapoint.id
         self.datapoint = datapoint
+        self.time = datetime.now()
 
     def __repr__(self):
         return "<Datavalue('%s','%s','%s','%s')>" % (self.value, self.error, self.datatype, self.datapoint)
 
 
-class Experiment(_Base):
-    __tablename__ = "experiments"
-
-    id = Column(Integer, primary_key=True)
-    startTime = Column(DateTime)
-
-
-    def __init__(self):
-        self.startTime = datetime.now()
-
-    def __repr__(self):
-        return "<Experiment('%s')>" % self.id
-
 
 _Base.metadata.create_all(_engine)
-

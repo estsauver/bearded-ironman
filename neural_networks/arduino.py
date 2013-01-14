@@ -55,6 +55,8 @@ for sensorType, pins in sensorPins.iteritems():
 # This is the eventloop. It goes for forever, until the program is killed. We might replace this with a
 # Qt Application Core loop since it seems like it might handle abrupt exits better.
 while True:
+    datapoint = dataProcessing.Datapoint(experiment)
+    session.add(datapoint)
     for type, pins in sensorPins.iteritems():
     #       readpins is an anonymous function that we apply to every pin we have for a sensor to get all of the readings.
         readpins = lambda x: board.analog[x].read()
@@ -68,7 +70,7 @@ while True:
 
         if value != False:
         #            type.__name__ returns the string that's the function name which, in our case equals the sensor name.
-            newPoint = dataProcessing.Datapoint(value, valueerror, type.__name__, experiment)
+            newPoint = dataProcessing.Datavalue(value, valueerror, type.__name__, datapoint)
             session.add(newPoint)
             print newPoint
         else:
@@ -77,9 +79,6 @@ while True:
         #   We commit the data after we have read for every sensor. This drops the database overhead. If it turns out to be a
         #   problem we can commit more occasionally.
     session.commit()
-
-
-
 
     #Waits 10 seconds, this is ~approximately our sampling interval.
     board.pass_time(sampling_interval)
