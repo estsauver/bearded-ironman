@@ -34,40 +34,26 @@ class Datapoint(_Base):
 
     id = Column(Integer, primary_key=True)
 
-    time_recorded = Column(DateTime)
-    experiment_id = Column(Integer, ForeignKey('experiments.id'))
-    experiment = relationship(Experiment, backref=backref("datapoints", order_by=time_recorded))
-
-    def __init__(self, experiment):
-        self.time_recorded = datetime.now()
-        self.experiment_id = experiment.id
-        self.experiment = experiment
-
-    def __repr__(self):
-        return "<Datapoint('%s', '%s')>" % (self.time_recorded, self.experiment)
-
-
-class Datavalue(_Base):
-    __tablename__ = "datavalues"
-
-    id = Column(Integer, primary_key=True)
     value = Column(Float)
     error = Column(Float)
     dataType = Column(String)
     time = Column(DateTime)
-    datapoint_id = Column(Integer, ForeignKey('datapoints.id'))
-    datapoint = relationship(Datapoint, backref=backref("datavalues", order_by=id))
+    group_int = Column(Integer)
+    experiment_id = Column(Integer, ForeignKey('experiments.id'))
+    experiment = relationship(Experiment, backref=backref("datapoints", order_by=time))
 
-    def __init__(self, value, error, datatype, datapoint):
+    def __init__(self, value, error, dataType, experiment, group_int):
         self.value = value
         self.error = error
-        self.datatype = datatype
-        self.datapoint_id = datapoint.id
-        self.datapoint = datapoint
+        self.dataType = dataType
         self.time = datetime.now()
+        self.group_int = group_int
+        self.experiment_id = experiment.id
+        self.experiment = experiment
 
     def __repr__(self):
-        return "<Datavalue('%s','%s','%s','%s')>" % (self.value, self.error, self.datatype, self.datapoint)
+        return "<Datapoint('%s','%s','%s','%s')>" % (self.value, self.error, self.dataType, self.experiment_id)
+
 
 
 
