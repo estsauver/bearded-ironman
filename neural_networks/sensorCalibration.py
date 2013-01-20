@@ -23,3 +23,6 @@ def pH(pins):
     value = (pins[0] - pins[1]) * 1000
     error = 3
     return (value, error)
+
+
+sensorPins = {temperature: [1], pH: [2, 3]}
