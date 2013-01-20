@@ -1,14 +1,21 @@
-__author__ = 'estsauver'
+__author__ = 'estsauver@gmail.com'
+
+import sys
+import pyfirmata
+import pyfirmata.mockup
+import dataProcessing
+
+
+#Here we grab the functions for all the sensors that we need.
+from sensorCalibration import temperature, pH
+
 #This defines our sampling interval in seconds. I'm not sure if this includes the rest of the time
 #the code takes to execute or not.
 sampling_interval = 10
 
-import sys
-import pyfirmata
-import dataProcessing
+#This code defines the testing data
+ISTESTING = True
 
-#Here we grab the functions for all the sensors that we need.
-from sensorCalibration import temperature, pH
 
 # This starts the datbase session that we save things to.
 session = dataProcessing.Session()
@@ -26,15 +33,19 @@ session.commit()
 sensorPins = {temperature: [1], pH: [2, 3]}
 
 #This is the port that the arduino is on. This may be different on different operating systems.
-port = "/dev/tty.usbmodem411"
 
 #We try to connect to the board and if that fails we print a warning.
-try:
-    board = pyfirmata.Arduino(port)
+if ISTESTING:
+    pyfirmata.pyfirmata.serial.Serial = pyfirmata.mockup.MockupSerial
+    board=pyfirmata.mockup.MockupBoard("",pyfirmata.BOARDS["arduino"])
+else:
+    port = "/dev/tty.usbmodem621"
+    try:
+        board = pyfirmata.Arduino(port)
+    except AttributeError:
+        print "Board connection failed"
+        sys.exit("Could not connect to arduino board")
 
-except:
-    print "Board connection failed"
-    sys.exit("Could not connect to arduino board")
 
 
 #THe iterator construct keeps the board from sending *too much* data to the serial. This causes it to just update very

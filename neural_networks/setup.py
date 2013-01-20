@@ -5,8 +5,10 @@ setup(
     version='0.0.1',
     packages=[''],
     url='https://github.com/estsauver/bearded-ironman',
-    license='No License at this time',
+    license='GPLv3',
     author='Earl St Sauver',
     author_email='estsauver@gmail.com',
     description=''
 )
+
+

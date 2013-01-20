@@ -9,6 +9,7 @@ client = TwilioRestClient(account, token)
 
 class ErrorHandler(object):
     def __init__(self, experiment):
+        #newerrorhandler = ErrorHandler(experimentWeHave)
         self.badData = self.BadData()
         self.experiment = experiment
         #Sets maximum time between alerts so we're not constantly getting phone calls. This is right now 30 mins.
