@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/neural_networks/tests/bioduino_test.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/neural_networks/tests/bioduino_TESTS.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_networks/bioduino.py" afterPath="$PROJECT_DIR$/neural_networks/bioduino.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_networks/sensorCalibration.py" afterPath="$PROJECT_DIR$/neural_networks/sensorCalibration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" name="Default" comment="" />
     <ignored path="senior_project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" time="1358724549720" ignored="false" />
+    <file path="/Dummy.txt" changelist="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" time="1358816866066" ignored="false" />
     <file path="/arduino.py" changelist="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" time="1358716886236" ignored="false" />
     <file path="/dataProcessing.py" changelist="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" time="1358143763011" ignored="false" />
     <file path="/setup.py" changelist="ddfc1acd-453a-4b9d-9d05-7a5d8cac6dff" time="1358370707480" ignored="false" />
@@ -82,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bioduino_test.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bioduino_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_networks/tests/bioduino_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="877" selection-end="877" vertical-scroll-proportion="0.3478261">
+            <state line="31" column="33" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -93,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifier.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="notifier.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neural_networks/notifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.6302521">
               <folding />
             </state>
           </provider>
@@ -597,14 +590,18 @@
       <created>1358724601062</created>
       <updated>1358724601062</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed error in refactoring">
+      <created>1358816877477</created>
+      <updated>1358816877477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1346" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -622,8 +619,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.67105263" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67269737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32730263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -668,7 +665,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further refactoring and addition of unittests&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error in refactoring" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -685,6 +682,7 @@
     <MESSAGE value="Simplified data model to experiments+datapoints&#10;&#10;Instead of having a table with various datavalues assosciated&#10;with a datapoint, now each experiment just has a set of datapoints each of which have a &quot;group number&quot; which can be roughly thought of as a datapoint assosciation." />
     <MESSAGE value="Update .gitignore and refactored bioduino&#10;" />
     <MESSAGE value="Further refactoring and addition of unittests&#10;" />
+    <MESSAGE value="Fixed error in refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -763,13 +761,6 @@
         <state line="1" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.039473683" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_networks/notifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/dataProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="40" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
@@ -809,10 +800,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_networks/tests/bioduino_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="877" selection-end="877" vertical-scroll-proportion="0.3478261">
+        <state line="31" column="33" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_networks/notifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.6302521">
+          <folding />
         </state>
       </provider>
     </entry>
