@@ -29,6 +29,7 @@ class Bioreactor(object):
         '''
         self.sensorPinDict = sensorPins
         self.numLoops = numLoops
+
         try:
             self.board = pyfirmata.Arduino(port)
             #THe iterator construct keeps the board from sending *too much* data to the serial. This causes it to just update very
@@ -46,7 +47,7 @@ class Bioreactor(object):
             sys.exit("Could not connect to arduino board")
             # This starts the datbase session that we save things to.
         self.session = dataProcessing.Session()
-        self.shouldContinue = True
+
 
     def startExperiment(self):
         #create a new experiment to assosciate the datapoints with
@@ -61,7 +62,8 @@ class Bioreactor(object):
         """This is the eventloop. It goes for forever, until the program is killed. We might replace this with a
         Qt Application Core loop since it seems like it might handle abrupt exits better."""
         dataPointNumber = 0
-        while self.shouldContinue:
+
+        while True:
             self.record_data(dataPointNumber)
             self.session.commit()
             dataPointNumber += 1
@@ -71,7 +73,6 @@ class Bioreactor(object):
 
             if dataPointNumber == self.numLoops:
                 return
-
 
     def record_data(self,dataPointNumber):
         for sensortype, pins in self.sensorPinDict.iteritems():
@@ -93,8 +94,10 @@ class Bioreactor(object):
             else:
                 #        TODO: Add error handler.
                 print "Bad Data of type %s with pin values %s" % (sensortype.__name__, pinvalues)
+
                 #   We commit the data after we have read for every sensor. This drops the database overhead. If it turns out to be a
                 #   problem we can commit more occasionally.
+                
 if __name__=="__main__":
     reactor = Bioreactor(sensorPins)
     reactor.startExperiment()
