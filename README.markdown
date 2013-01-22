@@ -1,4 +1,4 @@
 Bearded Ironman
 ===============
 
-Cur
+Curently still in alpha.
