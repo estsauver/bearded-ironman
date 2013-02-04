@@ -1,4 +1,4 @@
-__author__ = 'estsauver'
+__author__ = ['estsauver', 'johnabel']
 
 #scale 0 --> 1 sensor input
 
