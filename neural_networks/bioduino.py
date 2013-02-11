@@ -1,8 +1,11 @@
 __author__ = 'estsauver@gmail.com'
 
 import sys
+
 import pyfirmata
 import pyfirmata.mockup
+
+import notifier
 import dataProcessing
 from sensorCalibration import temperature, pH, sensorPins
 
@@ -14,7 +17,7 @@ from sensorCalibration import temperature, pH, sensorPins
 sampling_interval = 10
 
 #This is the port that the arduino is on. This may be different on different operating systems.
-port = "/dev/tty.usbmodem621"
+port = "/dev/tty.usbmodem411"
 
 #This code defines the testing data
 ISTESTING = True
@@ -56,25 +59,29 @@ class Bioreactor(object):
         self.session.add(self.experiment)
         #Commits the experiment to memory.
         self.session.commit()
-        self.runloop()
+
+        self.errorHandler = notifier.ErrorHandler(self.experiment)
+
+        self.shouldRunLoop = True
+        self.dataPointNumber = 0
+        while self.shouldRunLoop:
+            self.runloop()
 
     def runloop(self):
         """This is the eventloop. It goes for forever, until the program is killed. We might replace this with a
         Qt Application Core loop since it seems like it might handle abrupt exits better."""
-        dataPointNumber = 0
 
-        while True:
-            self.record_data(dataPointNumber)
-            self.session.commit()
-            dataPointNumber += 1
 
-            #Waits 10 seconds, this is ~approximately our sampling interval.
-            self.board.pass_time(sampling_interval)
+        self.record_data()
+        self.session.commit()
+        self.dataPointNumber += 1
 
-            if dataPointNumber == self.numLoops:
-                return
+        #Waits 10 seconds, this is ~approximately our sampling interval.
+        self.board.pass_time(sampling_interval)
 
-    def record_data(self,dataPointNumber):
+
+
+    def record_data(self):
         for sensortype, pins in self.sensorPinDict.iteritems():
             #readpins is an inline function that we apply to every pin we have for a sensor to get all of the readings.
             readpins = lambda x: self.board.analog[x].read()
@@ -88,13 +95,13 @@ class Bioreactor(object):
 
             if value != False:
                 #sensortype.__name__ returns the string that's the function name which, in our case equals the sensor name.
-                newPoint = [dataProcessing.Datapoint(value, valueerror, sensortype.__name__, self.experiment,dataPointNumber)]
+                newPoint = [dataProcessing.Datapoint(value, valueerror, sensortype.__name__, self.experiment,self.dataPointNumber)]
                 self.experiment.datapoints.extend(newPoint)
                 print newPoint
             else:
                 #        TODO: Add error handler.
                 print "Bad Data of type %s with pin values %s" % (sensortype.__name__, pinvalues)
-
+                self.errorHandler.newError(sensortype.__name__,pinvalues)
                 #   We commit the data after we have read for every sensor. This drops the database overhead. If it turns out to be a
                 #   problem we can commit more occasionally.
                 
