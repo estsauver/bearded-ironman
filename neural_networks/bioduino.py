@@ -4,6 +4,7 @@ import sys
 
 import pyfirmata
 import pyfirmata.mockup
+import requests
 
 import notifier
 import dataProcessing
@@ -97,6 +98,8 @@ class Bioreactor(object):
                 #sensortype.__name__ returns the string that's the function name which, in our case equals the sensor name.
                 newPoint = [dataProcessing.Datapoint(value, valueerror, sensortype.__name__, self.experiment,self.dataPointNumber)]
                 self.experiment.datapoints.extend(newPoint)
+                payload = {'current': value, 'auth_token': 'tufts_bioreactor_sucks_to_be_you'}
+                r = requests.post("http://obscure-crag-4218.herokuapp.com:80/widgets/"+sensortype, params=payload)
                 print newPoint
             else:
                 #        TODO: Add error handler.
