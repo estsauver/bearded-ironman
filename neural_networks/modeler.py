@@ -21,7 +21,7 @@ nInp = 2
 kNearest = 3
 
 #We initialize the dataset container for the neural network here.
-dataset = SupervisedDataSet(nInp, 1)
+dataset = ImportanceDataSet(nInp, 1)
 
 
 #Temporarily generated datapoints.
@@ -91,22 +91,19 @@ for i in data:
         importanceWeights = scipy.vstack((importanceWeights,distance))
     except NameError:
         importanceWeights = distance
-    if distance < 0.313891317477:
-        try:
-            filteredPoints = scipy.vstack((filteredPoints,i))
-        except NameError:
-            filteredPoints = i
+    try:
+        filteredPoints = scipy.vstack((filteredPoints,i))
+    except NameError:
+        filteredPoints = i
 
-        try:
-            alcoholFilteredPoints = scipy.vstack((alcoholFilteredPointsPoints, yi))
-        except NameError:
-            alcoholFilteredPoints = yi
+    try:
+        alcoholFilteredPoints = scipy.vstack((alcoholFilteredPointsPoints, yi))
+    except NameError:
+        alcoholFilteredPoints = yi
 
 
-#        dataset.newSequence()
-        dataset.appendLinked(i.tolist(), [yi.tolist()])
-    else:
-        removedPoints += 1
+    dataset.newSequence()
+    dataset.appendLinked(i.tolist(), [yi.tolist()], (1.0/(1.0+distance))**(3.5/2.0))
 
 print "Removed Points {}".format(removedPoints)
 print "Average distance = {} ".format(importanceWeights.mean())
